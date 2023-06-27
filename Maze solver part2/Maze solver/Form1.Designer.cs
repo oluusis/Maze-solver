@@ -32,12 +32,17 @@
             panelMaze = new Panel();
             buttonGenerateMaze = new Button();
             panel1 = new Panel();
+            buttonGenFromFile = new Button();
+            textBoxPath = new TextBox();
+            label3 = new Label();
+            buttonChooseMap = new Button();
             trackBar = new TrackBar();
             label2 = new Label();
             labelSteps = new Label();
             label1 = new Label();
             buttonSolve = new Button();
             timer = new System.Windows.Forms.Timer(components);
+            openFileDialog = new OpenFileDialog();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trackBar).BeginInit();
             SuspendLayout();
@@ -56,12 +61,16 @@
             buttonGenerateMaze.Name = "buttonGenerateMaze";
             buttonGenerateMaze.Size = new Size(83, 48);
             buttonGenerateMaze.TabIndex = 1;
-            buttonGenerateMaze.Text = "Generate Maze";
+            buttonGenerateMaze.Text = "Generate random";
             buttonGenerateMaze.UseVisualStyleBackColor = true;
             buttonGenerateMaze.Click += buttonGenerateMaze_Click;
             // 
             // panel1
             // 
+            panel1.Controls.Add(buttonGenFromFile);
+            panel1.Controls.Add(textBoxPath);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(buttonChooseMap);
             panel1.Controls.Add(trackBar);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(labelSteps);
@@ -72,6 +81,42 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(198, 600);
             panel1.TabIndex = 2;
+            // 
+            // buttonGenFromFile
+            // 
+            buttonGenFromFile.Location = new System.Drawing.Point(102, 16);
+            buttonGenFromFile.Name = "buttonGenFromFile";
+            buttonGenFromFile.Size = new Size(83, 48);
+            buttonGenFromFile.TabIndex = 10;
+            buttonGenFromFile.Text = "Generate from file";
+            buttonGenFromFile.UseVisualStyleBackColor = true;
+            buttonGenFromFile.Click += buttonGenFromFile_Click;
+            // 
+            // textBoxPath
+            // 
+            textBoxPath.Location = new System.Drawing.Point(13, 179);
+            textBoxPath.Name = "textBoxPath";
+            textBoxPath.Size = new Size(170, 23);
+            textBoxPath.TabIndex = 9;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(13, 161);
+            label3.Name = "label3";
+            label3.Size = new Size(37, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Path: ";
+            // 
+            // buttonChooseMap
+            // 
+            buttonChooseMap.Location = new System.Drawing.Point(100, 208);
+            buttonChooseMap.Name = "buttonChooseMap";
+            buttonChooseMap.Size = new Size(83, 26);
+            buttonChooseMap.TabIndex = 7;
+            buttonChooseMap.Text = "Choose map";
+            buttonChooseMap.UseVisualStyleBackColor = true;
+            buttonChooseMap.Click += buttonChooseMap_Click;
             // 
             // trackBar
             // 
@@ -114,9 +159,9 @@
             // 
             // buttonSolve
             // 
-            buttonSolve.Location = new System.Drawing.Point(102, 16);
+            buttonSolve.Location = new System.Drawing.Point(13, 540);
             buttonSolve.Name = "buttonSolve";
-            buttonSolve.Size = new Size(83, 48);
+            buttonSolve.Size = new Size(182, 48);
             buttonSolve.TabIndex = 2;
             buttonSolve.Text = "Solve";
             buttonSolve.UseVisualStyleBackColor = true;
@@ -126,6 +171,10 @@
             // 
             timer.Interval = 500;
             timer.Tick += timer_Tick;
+            // 
+            // openFileDialog
+            // 
+            openFileDialog.FileName = "openFileDialog";
             // 
             // Form
             // 
@@ -152,5 +201,10 @@
         private Label label1;
         private TrackBar trackBar;
         private Label label2;
+        private TextBox textBoxPath;
+        private Label label3;
+        private Button buttonChooseMap;
+        private OpenFileDialog openFileDialog;
+        private Button buttonGenFromFile;
     }
 }

@@ -1,0 +1,51 @@
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.exe
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.deps.json
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.runtimeconfig.json
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.dll
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.pdb
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.AssemblyReference.cache
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.GenerateResource.cache
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.AssemblyInfoInputs.cache
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.AssemblyInfo.cs
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.CoreCompileInputs.cache
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.dll
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\refint\Maze solver.dll
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.pdb
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.genruntimeconfig.cache
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\ref\Maze solver.dll
+C:\Users\Oliver Hruban\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze_solver.Form.resources
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.exe
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.deps.json
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.runtimeconfig.json
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.dll
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\bin\Debug\net6.0-windows\Maze solver.pdb
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.AssemblyReference.cache
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze_solver.Form.resources
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.GenerateResource.cache
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.AssemblyInfoInputs.cache
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.AssemblyInfo.cs
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.CoreCompileInputs.cache
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.dll
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\refint\Maze solver.dll
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.pdb
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\Maze solver.genruntimeconfig.cache
+C:\Users\Oliver Hruban\Programming\C#\Maze solver\Maze solver\obj\Debug\net6.0-windows\ref\Maze solver.dll
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\bin\Debug\net6.0-windows\Maze solver.exe
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\bin\Debug\net6.0-windows\Maze solver.deps.json
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\bin\Debug\net6.0-windows\Maze solver.runtimeconfig.json
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\bin\Debug\net6.0-windows\Maze solver.dll
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\bin\Debug\net6.0-windows\Maze solver.pdb
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.AssemblyReference.cache
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze_solver.Form.resources
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.GenerateResource.cache
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.AssemblyInfoInputs.cache
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.AssemblyInfo.cs
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.csproj.CoreCompileInputs.cache
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.dll
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\refint\Maze solver.dll
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.pdb
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\Maze solver.genruntimeconfig.cache
+C:\Users\Oliver Hruban\source\repos\Maze-solver\Maze solver part2\Maze solver\obj\Debug\net6.0-windows\ref\Maze solver.dll

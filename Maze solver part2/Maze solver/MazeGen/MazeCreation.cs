@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Maze_solver.MazeGen
@@ -23,6 +24,11 @@ namespace Maze_solver.MazeGen
         public MazeCreation(int x, int y)
         {
             Field = new Squere[x, y];
+            Reset();
+        }
+
+        public void Reset()
+        {
             rnd = new Random();
             deciders = new List<Decider>();
             startPoint = new Point();
@@ -30,8 +36,10 @@ namespace Maze_solver.MazeGen
         }
 
 
-        public void GenStart()
+        public void GenRndStart()
         {
+            Reset();
+
             for (int i = 0; i < 30; i++)
             {
                 for (int j = 0; j < 30; j++)
@@ -54,20 +62,67 @@ namespace Maze_solver.MazeGen
             startPoint.Y = rnd.Next(1, 28);
             Field[startPoint.X, startPoint.Y] = new Squere(new Point(startPoint.X, startPoint.Y), TypesOfSqueres.Start, new Label());
 
-            deciders.Add( new Decider(startPoint, startPoint));
+            deciders.Add(new Decider(startPoint, startPoint));
 
             endPoint.X = rnd.Next(1, 28);
             endPoint.Y = rnd.Next(1, 28);
             Field[endPoint.X, endPoint.Y] = new Squere(new Point(endPoint.X, endPoint.Y), TypesOfSqueres.Finish, new Label());
         }
 
-        public bool Generation()
+
+        public void GeneretStaticMap(StreamReader sr)
+        {
+            Reset();
+            sr.BaseStream.Position = 0; 
+            string read = "";
+
+            for (int i = 0; i < this.Field.GetLength(0); i++)
+            {
+                read = sr.ReadLine();
+                for (int j = 0; j < this.Field.GetLength(1); j++)
+                {
+                    Field[i, j] = new Squere(new Point(i, j), TypesOfSqueres.Space, new Label());
+                    
+
+                    switch ((char)read[j])
+                    {
+                        case '-':
+                            Field[i, j].TypesOfSquere = TypesOfSqueres.Wall;
+                            break;
+
+                        case '*':
+                            Field[i, j].TypesOfSquere = TypesOfSqueres.Space;                           
+                            break;
+
+                        case 's':
+                             Field[i, j].TypesOfSquere = TypesOfSqueres.Start;
+                            startPoint.X = i;
+                            startPoint.Y = j;
+                            break;
+
+                        case 'e':
+                            Field[i, j].TypesOfSquere = TypesOfSqueres.Finish;
+                            endPoint.X = i;
+                            endPoint.Y = j;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            deciders.Add(new Decider(startPoint, startPoint));
+        }
+
+
+
+
+        public bool Start()
         {
             deciders[deciders.Count - 1].FindPosibleDirections(Field);
 
             Point moveTo = deciders[deciders.Count - 1].Move();
 
-            if(!deciders[deciders.Count - 1].FinishControll(endPoint))
+            if (!deciders[deciders.Count - 1].FinishControll(endPoint))
             {
                 if (moveTo == null)
                 {
@@ -83,21 +138,18 @@ namespace Maze_solver.MazeGen
                     }
                     else
                     {
-                        MessageBox.Show("Done");
+                        MessageBox.Show("Done!!!!!!!!!!!!!!!!!!!!!!");
                         return false;
                     }
 
                 }
                 return false;
-             }
+            }
             else
             {
-
-                Debug.Write("End!");
                 return true;
             }
 
-}
-
+        }
     }
 }

@@ -6,22 +6,23 @@ namespace Maze_solver
 {
     public partial class Form : System.Windows.Forms.Form
     {
-        private MazeGeneration mG;
+        private MazeStartView mS;
         private MazeCreation mC;
+
+        private StreamReader sr;
 
         public Form()
         {
             InitializeComponent();
-
         }
 
-        private void buttonGenerateMaze_Click(object sender, EventArgs e)
+        private void Reset()
         {
             this.counter = 0;
 
             if (this.panelMaze.Controls != null)
             {
-                for (int i = 0; i < 100; i++) //?? panelMaze.Controls.Count
+                for (int i = 0; i < 100; i++)
                 {
                     foreach (Control ctrl in this.panelMaze.Controls)
                     {
@@ -32,12 +33,26 @@ namespace Maze_solver
             }
 
             this.mC = new MazeCreation(30, 30);
-            this.mG = new MazeGeneration(this, mC);
-            mC.GenStart();
-            mG.GenerateView();
+            this.mS = new MazeStartView(this, mC);
+        }
 
-          
+        private void buttonGenerateMaze_Click(object sender, EventArgs e)
+        {
+            Reset();
 
+            mC.GenRndStart();
+
+            mS.GenerateView();
+        }
+
+        private void buttonGenFromFile_Click(object sender, EventArgs e)
+        {
+            if(this.sr != null)
+            {
+                Reset();
+                mC.GeneretStaticMap(this.sr);
+                mS.GenerateView();
+            }       
         }
 
         private void buttonSolve_Click(object sender, EventArgs e)
@@ -61,14 +76,18 @@ namespace Maze_solver
         private int counter = 0;
         private void timer_Tick(object sender, EventArgs e)
         {
-            counter++;
-            this.labelSteps.Text = counter.ToString();
-
-            if (counter == 10000 || mC.Generation())
+            if(this.panelMaze.Controls.Count > 0)
             {
-                timer.Stop();
-                MessageBox.Show("Done!");
+                counter++;
+                this.labelSteps.Text = counter.ToString();
+
+                if (counter == 10000 || mC.Start())
+                {
+                    timer.Stop();
+                    MessageBox.Show("Destination reached!");
+                }
             }
+           
         }
 
         private void trackBar_Scroll(object sender, EventArgs e)
@@ -88,5 +107,27 @@ namespace Maze_solver
             }
             this.timer.Interval = Convert.ToInt32(this.trackBar.Value) * power;
         }
+
+        private void buttonChooseMap_Click(object sender, EventArgs e)
+        {
+            openFileDialog.ShowDialog();
+            if(this.sr != null)
+            {
+                sr.Close();
+            }
+            try
+            {
+                string path = openFileDialog.FileName;
+                this.sr = new StreamReader(path);
+                this.textBoxPath.Text = path;
+            }
+            catch
+            {
+                this.sr = null;
+            }
+            
+        }
+
+
     }
 }

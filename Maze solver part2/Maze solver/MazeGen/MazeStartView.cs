@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Security.Cryptography;
 
 namespace Maze_solver.MazeGen
 {
-    public class MazeGeneration
+    public class MazeStartView
     {
         private int _countX;
         private int _countY;
         private Form _form;
         private Squere[,] _field;
 
-        public MazeGeneration(Form form, MazeCreation mC)
+        public MazeStartView(Form form, MazeCreation mC)
         {
             _countX = 0;
             _countY = 0;
@@ -65,6 +66,6 @@ namespace Maze_solver.MazeGen
             _countX = 0;
             _countY = 0;
 
-        }
+        }        
     }
 }
